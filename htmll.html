@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивный Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>JavaScript Quiz</h1>
+        <div class="quiz-header">
+            <div class="timer">Время: <span id="time">60</span> сек</div>
+            <div class="score">Счет: <span id="score">0</span></div>
+        </div>
+        <div id="question-container" class="hide">
+            <div id="question">Вопрос</div>
+            <div id="answer-buttons" class="btn-grid"></div>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Начать</button>
+            <button id="next-btn" class="next-btn btn hide">Следующий</button>
+        </div>
+        <div id="result" class="hide"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
